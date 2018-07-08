@@ -1,6 +1,5 @@
 <?php require 'views/layout/header.view.php'; ?>
 
-<h1>Contact Page</h1>
-<p>Contact info</p>
+<h1>Home</h1>
 
 <?php require 'views/layout/footer.view.php'; ?>
