@@ -21,7 +21,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="tasks">To do lists</a>
+                <a class="nav-link" href="task">To do lists</a>
             </li>
         </ul>
             <form class="form-inline my-2 my-lg-0">

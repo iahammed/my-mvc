@@ -12,7 +12,7 @@
 	<?php endforeach; ?>
 </ul>
 <hr>
-<form action="/tasks" method="POST">
+<form action="/task" method="POST">
   	<div class="form-group">
     	<label for="">New task</label>
     	<input 	type="text" name="task" class="form-control" 
