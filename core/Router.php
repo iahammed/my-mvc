@@ -26,21 +26,34 @@ class Router {
 		$this->routes['POST'][$uri] = $controller;
 	}
 
-	// public function define($routes)
-	// {
-	// 	return $this->routes = $routes;
-	// }
-
 	public function direct($uri, $requestType)
 	{
+		// die(var_dump($uri, $requestType));
+		
 		if(array_key_exists($uri, $this->routes[$requestType])){
-			// var_dump($uri);
-			return $this->routes[$requestType][$uri];
+			return $this->callAction(
+				...explode('@', $this->routes[$requestType][$uri])
+			);
 		} else {
 			return $this->routes['GET']['404'];
 		}
-		throw new Exception("No route defined");
-		
+		throw new Exception("No route defined");		
 	}
+
+	protected function callAction($controller, $action)
+    {
+    	// die(var_dump($controller, $action));
+        // $controller = "App\\Controllers\\{$controller}";
+        // $controller = "{$controller}";
+        
+        $controller = new $controller;
+
+        if (! method_exists($controller, $action)) {
+            throw new Exception(
+                "{$controller} does not respond to the {$action} action."
+            );
+        }
+        return $controller->$action();
+    }
 
 }

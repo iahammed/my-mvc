@@ -12,12 +12,5 @@
 	<?php endforeach; ?>
 </ul>
 <hr>
-<form action="/task" method="POST">
-  	<div class="form-group">
-    	<label for="">New task</label>
-    	<input 	type="text" name="task" class="form-control" 
-    			placeholder="Enter a new task">
-  	</div>
-  	<button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<a class="btn btn-success" href="/task/create">Create new task</a>
 <?php require 'views/layout/footer.view.php'; ?>

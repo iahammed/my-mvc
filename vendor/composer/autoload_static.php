@@ -12,9 +12,11 @@ class ComposerStaticInit5251cefa42b447776a1e2ddd1ae2d560
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInit5251cefa42b447776a1e2ddd1ae2d560' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
+        'PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
         'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
         'Request' => __DIR__ . '/../..' . '/core/Request.php',
         'Router' => __DIR__ . '/../..' . '/core/Router.php',
+        'TaskController' => __DIR__ . '/../..' . '/controllers/TaskController.php',
         'task' => __DIR__ . '/../..' . '/models/task.php',
     );
 
