@@ -1,15 +1,14 @@
 <?php
 
-
 if(!empty($_POST['task'])){
-	$task = $app['database']->insert('tasks',[
+	$task = App::get('database')->insert('tasks',[
 		'description' => $_POST['task'],
 		'completed'		=> 0
 	]);
 }
 
 
-$tasks = $app['database']->selectAll('tasks');
+$tasks = App::get('database')->selectAll('tasks');
 
 require 'views/task.view.php';
 

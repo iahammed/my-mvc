@@ -13,7 +13,7 @@ $router->get('','controllers/home.php');
 $router->get('about','controllers/about.php');
 $router->get('contact','controllers/contact.php');
 $router->get('task','controllers/task.php');
-$router->post('task','controllers/task.php@store');
+$router->post('task','controllers/task.php');
 $router->get('404','controllers/404.php');
 
 
